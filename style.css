@@ -1,3 +1,16 @@
+@keyframes color-change {
+    0% {
+      color: rgb(0, 193, 116);
+    }
+  
+    50% {
+      color: rgb(255, 166, 0);
+    }
+  
+    100% {
+      color: rgb(0, 193, 116);
+    }
+}
 body {
     font-family: Arial,  sans-serif; /* Семейство шрифтов */
     font-size: 11px; /* Размер основного шрифта в <p></p>  */
@@ -5,11 +18,13 @@ body {
     color: #333333; /* Цвет основного текста */ 
 }
 h1 {
+    animation: color-change 3s infinite;
     color: #00a800; /* Цвет заголовка */
     font-size: 24px; /* Размер шрифта в пунктах */
     font-family: Georgia, serif; /* Семейство шрифтов */
 }
 h4 {
+    animation: color-change 3s infinite;
     color: #00a800; /* Цвет заголовка */
     font-size: 24px; /* Размер шрифта в пунктах */
     font-family: Georgia, serif; /* Семейство шрифтов */
